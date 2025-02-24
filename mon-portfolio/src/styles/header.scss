@@ -1,0 +1,51 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    h1 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+      font-family: 'Syne';
+      font-size: 50px;
+      font-weight: 800;
+      color: #BFA181;
+      
+      span {
+        font-family: 'Work Sans';
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+    }
+  
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        margin-right: 30px;
+  
+        li {
+          padding: 0 10px;
+          font-size: 30px;
+  
+          a {
+            color: #BFA181;
+            text-decoration: none;
+  
+            &:visited {
+              color: #BFA181;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  

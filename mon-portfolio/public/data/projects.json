@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Kasa",
+    "image": "images/kasa.webp",
+    "github": "https://github.com/YoDaMned59/kasa.git",
+    "site": "https://openclassrooms-kasa-app.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "Ohmyfood",
+    "image": "images/ohmyfood.webp",
+    "github": "https://github.com/YoDaMned59/Ohmyfood.git",
+    "site": "https://yodamned59.github.io/Ohmyfood/"
+  },
+  {
+    "id": 3,
+    "title": "724 events",
+    "image": "images/724-event.webp",
+    "github": "https://github.com/YoDaMned59/Debuggez-une-application-React.JS-main.git",
+    "site": "https://724events-ac.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "ArgentBank",
+    "image": "images/argentbank.webp",
+    "github": "https://github.com/YoDaMned59/ArgentBank-Frontend.git",
+    "site": "https://artfish.pro/portfolio/argentbank/"
+  }
+]
