@@ -75,6 +75,11 @@ header {
       font-size: 35px;
     }
 
+    h1 span {
+      text-align: left; 
+      margin-left: 0; 
+    }
+
     nav ul {
       flex-direction: column;  
       justify-content: flex-start;
@@ -90,6 +95,11 @@ header {
   @media (max-width: 480px) {
     h1 {
       font-size: 28px;
+    }
+
+    h1 span {
+      text-align: left; 
+      margin-left: 0;
     }
 
     nav ul {
