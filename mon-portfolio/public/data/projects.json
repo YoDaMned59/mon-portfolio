@@ -4,27 +4,35 @@
     "title": "Kasa",
     "image": "images/kasa.webp",
     "github": "https://github.com/YoDaMned59/kasa.git",
-    "site": "https://openclassrooms-kasa-app.netlify.app/"
+    "site": "https://openclassrooms-kasa-app.netlify.app/",
+    "description": "Kasa est une application de gestion des locations saisonnières.",
+    "skills": "React, API REST, Responsivité, CSS Grid"
   },
   {
     "id": 2,
     "title": "Ohmyfood",
     "image": "images/ohmyfood.webp",
     "github": "https://github.com/YoDaMned59/Ohmyfood.git",
-    "site": "https://yodamned59.github.io/Ohmyfood/"
+    "site": "https://yodamned59.github.io/Ohmyfood/",
+    "description": "Une application permettant de gérer un menu pour un restaurant.",
+    "skills": "HTML, CSS, JavaScript, Responsivité"
   },
   {
     "id": 3,
     "title": "724 events",
     "image": "images/724-event.webp",
     "github": "https://github.com/YoDaMned59/Debuggez-une-application-React.JS-main.git",
-    "site": "https://724events-ac.vercel.app/"
+    "site": "https://724events-ac.vercel.app/",
+    "description": "Une application de gestion d'événements en ligne.",
+    "skills": "React, Debugging, API intégration"
   },
   {
     "id": 4,
     "title": "ArgentBank",
     "image": "images/argentbank.webp",
     "github": "https://github.com/YoDaMned59/ArgentBank-Frontend.git",
-    "site": "https://artfish.pro/portfolio/argentbank/"
+    "site": "https://artfish.pro/portfolio/argentbank/",
+    "description": "Un projet de refonte d'une application bancaire.",
+    "skills": "React, Redux, Authentification, UI/UX"
   }
 ]
