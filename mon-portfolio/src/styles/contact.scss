@@ -1,55 +1,101 @@
 #contact {
-	display: flex;
-	justify-content: center; 
-	align-items: center; 
-	padding: 100px;
-}
-
-#contact .container {
-	display: flex;
-	flex-direction: column; 
-	align-items: center; 
-	text-align: center;
-}
-
-span {
-	display: block;
-	font-size: 1.2em;
-	margin-bottom: 10px;
-}
-
-.form-container {
-	flex : 2;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	width: 70%;
-	align-items: flex-start;
-    margin-left: 80px;
-}
-
-form input {
-	width: 100%;
-	color: #BFA181;
-	border: solid 1px;
-	height: 2.5em;
-	margin-bottom: 20px;
-}
-
-form textarea {
-	width: 100%;
-    color: #BFA181;
-	border: solid 1px;
-	height: 5em;
-	line-height: 2.5em;
-	font-size: 1.2em;
-	margin-bottom: 20px;
-}
-input[type="submit"] {
-	padding: .5em 1em;
-    color: #BFA181;
-    background-color: #0A1828;
-    
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    span {
+      display: block;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+  
+    .form-container {
+      flex: 2;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      align-items: flex-start;
+      margin-left: 80px;
+  
+      input,
+      textarea {
+        width: 100%;
+        color: #BFA181;
+        border: solid 1px;
+        margin-bottom: 20px;
+      }
+  
+      input {
+        height: 2.5em;
+      }
+  
+      textarea {
+        height: 5em;
+        line-height: 2.5em;
+        font-size: 1.2em;
+      }
+  
+      input[type="submit"] {
+        padding: 0.5em 1em;
+        color: #BFA181;
+        background-color: #0A1828;
+        cursor: pointer;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background-color: #142d4c;
+        }
+      }
+    }
+  
+    @media (max-width: 1024px) {
+      padding: 50px;
+  
+      form {
+        width: 80%;
+        margin-left: 0;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 30px;
+  
+      form {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+  
+        input,
+        textarea {
+          font-size: 1em;
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      padding: 20px;
+  
+      form {
+        width: 100%;
+        text-align: center;
+  
+        input,
+        textarea {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+  

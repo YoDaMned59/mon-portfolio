@@ -1,4 +1,17 @@
 h1 {
 	font-size: 2em;
 	color: #BFA181;
-}
+  
+	@media (max-width: 1024px) {
+	  font-size: 1.8em;
+	}
+  
+	@media (max-width: 768px) {
+	  font-size: 1.6em;
+	}
+  
+	@media (max-width: 480px) {
+	  font-size: 1.4em;
+	}
+  }
+  
