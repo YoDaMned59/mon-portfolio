@@ -35,9 +35,8 @@ export const Contact = () => {
     <div className="container">
         <div className="contact-content">
             <div className="form-container">
-                <span>Une question ? Une demande de devis ?</span>
+                <span>Une question ?</span>
                 <p> N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures.</p>
-                
                 <form ref={form} onSubmit={sendEmail}>
                     <label htmlFor="name">Nom</label>
                     <input type="text" name="to_name" id="name" required />
