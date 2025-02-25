@@ -21,7 +21,7 @@ export const Projects = () => {
     }, []);
 
     return (
-        <section id="Projets">
+        <section id="projects" className="projets">
             <h2 className="title">Projets</h2>
             <Cards data={projects} />
         </section>
