@@ -29,29 +29,30 @@ export const Contact = () => {
     };
 
     return (
-<section id="contact">
-<h2>Contact</h2>
-    <div className="container">
-        <div className="contact-content">
-            <div className="form-container">
-                <span>Une question ?</span>
-                <p> N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures.</p>
-                <form ref={form} onSubmit={sendEmail}>
-                    <label htmlFor="name">Nom</label>
-                    <input type="text" name="to_name" id="name" required />
+        <section id="contact">
+            <h2>Contact</h2>
+            <div className="container">
+                <div className="contact-content">
+                    <div className="form-container">
+                        <span>Une question ?</span>
+                        <p> N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures.</p>
+                        <form ref={form} onSubmit={sendEmail}>
+                                <label htmlFor="name">Nom</label>
+                                <input type="text" name="to_name" id="name" required placeholder="Entrez votre nom" />
 
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" required />
+                                <label htmlFor="email">Email</label>
+                                <input type="email" name="email" id="email" required placeholder="Entrez votre email" />
 
-                    <label htmlFor="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                                <label htmlFor="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10" required placeholder="Votre message..."></textarea>
 
-                    <input type="submit" value="Envoyer" />
-                </form>
-                {status && <p className="status-message">{status}</p>}
+                                <input type="submit" value="Envoyer" />
+                            </form>
+
+                            {status && <p className="status-message">{status}</p>}
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
     );
 };

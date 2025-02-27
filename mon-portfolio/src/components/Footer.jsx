@@ -6,8 +6,11 @@ export const Footer = () => {
         <footer>
             <div className="footer-content">
                 <div className="social-icons">
-                    <a href="https://www.linkedin.com/in/duviviersebastien" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin />
+                    <a href="https://www.linkedin.com/in/duviviersebastien"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visiter mon profil LinkedIn">
+                        <FaLinkedin size={24} />
                     </a>
                 </div>
                 <p>Phone: <a href="tel:+33646147282">06/46/14/72/82</a></p>

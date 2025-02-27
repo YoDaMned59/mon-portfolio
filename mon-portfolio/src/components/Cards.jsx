@@ -7,7 +7,7 @@ export const Cards = ({ data, openModal }) => {
             {data.length > 0 &&
                 data.map((project) => (
                     <div key={project.id} className="card">
-                        <div>{project.title}</div>
+                        <h3>{project.title}</h3>
                         <img
                             src={project.image}
                             alt={project.title}
