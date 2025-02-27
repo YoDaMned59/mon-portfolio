@@ -1,21 +1,10 @@
 import { FaGithub } from "react-icons/fa";
-import { useState } from "react";
 import "../styles/projects.scss";
 
-export const Cards = ({ data }) => {
-    const [openModalId, setOpenModalId] = useState(null); 
-
-    const openModal = (projectId) => {
-        setOpenModalId(projectId); 
-    };
-
-    const closeModal = () => {
-        setOpenModalId(null); 
-    };
-
+export const Cards = ({ data, openModal }) => {
     return (
         <div className="grid">
-            {data.length > 0 && 
+            {data.length > 0 &&
                 data.map((project) => (
                     <div key={project.id} className="card">
                         <img
@@ -31,11 +20,9 @@ export const Cards = ({ data }) => {
                                 Voir le site
                             </a>
                         </div>
-                        <div className="description-content">
-                                <h3>{project.title}</h3>
-                                <p>{project.description}</p>
-                                <p><strong>Compétences développées :</strong> {project.skills}</p>
-                            </div>
+                        <button onClick={() => openModal(project.id)} className="open-modal-btn">
+                            Voir plus
+                        </button>
                     </div>
                 ))
             }
