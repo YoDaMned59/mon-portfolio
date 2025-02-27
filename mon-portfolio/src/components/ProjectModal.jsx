@@ -9,6 +9,7 @@ Modal.setAppElement("#root");
 
 export const ProjectModal = ({ isOpen, project, closeModal }) => {
     const [skills, setSkills] = useState([]);
+    const [imageSrc, setImageSrc] = useState(project?.descriptionImage);
 
     useEffect(() => {
         fetch("/data/skills.json")
@@ -16,6 +17,22 @@ export const ProjectModal = ({ isOpen, project, closeModal }) => {
             .then((data) => setSkills(data))
             .catch((error) => console.error("Erreur de chargement des compétences:", error));
     }, []);
+
+    useEffect(() => {
+        const updateImage = () => {
+            if (window.innerWidth <= 600) {
+                setImageSrc(project?.smallImage || project?.descriptionImage);
+            } else if (window.innerWidth <= 1024) {
+                setImageSrc(project?.mediumImage || project?.descriptionImage);
+            } else {
+                setImageSrc(project?.descriptionImage);
+            }
+        };
+
+        updateImage();
+        window.addEventListener("resize", updateImage);
+        return () => window.removeEventListener("resize", updateImage);
+    }, [project]);
 
     if (!project) return null;
 
@@ -41,7 +58,7 @@ export const ProjectModal = ({ isOpen, project, closeModal }) => {
                 <h2>{project.title}</h2>
 
                 <p className="modal-description">{project.description}</p>
-                <img src={project.descriptionImage} className="card-image" />
+                <img src={imageSrc} className="modal-image" alt="Aperçu du projet" />
 
                 <p className="modal-skills">
                     <strong>Compétences développées :</strong>
@@ -69,6 +86,13 @@ export const ProjectModal = ({ isOpen, project, closeModal }) => {
 
 ProjectModal.propTypes = {
     isOpen: PropTypes.bool.isRequired,
-    project: PropTypes.object,
+    project: PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string,
+        descriptionImage: PropTypes.string,
+        smallImage: PropTypes.string,
+        mediumImage: PropTypes.string,
+        skills: PropTypes.string,
+    }),
     closeModal: PropTypes.func.isRequired,
 };

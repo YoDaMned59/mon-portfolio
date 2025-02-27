@@ -99,11 +99,17 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) { // Pour tablette et mobile
   .modal-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 70vh; // Ajuste la hauteur pour ne pas dépasser l'écran
+    width: 80vw;  // L’image prend 80% de la largeur de l’écran
+    max-width: 400px;  // Limite la largeur pour éviter un effet trop grand
+    height: auto;  // Garde le ratio d’aspect
+  }
+}
+
+@media (max-width: 600px) { // Pour les petits écrans
+  .modal-image {
+    width: 90vw;  // L’image prend presque toute la largeur de l’écran
+    max-width: 300px;  // Réduit encore la taille sur les très petits écrans
   }
 }
