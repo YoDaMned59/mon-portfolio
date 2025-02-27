@@ -98,3 +98,10 @@
     background-color: #c0392b;
   }
 }
+
+@media (max-width: 768px) {
+  .modal-image {
+    max-width: 90vw;  
+    height: auto;  
+  }
+}
