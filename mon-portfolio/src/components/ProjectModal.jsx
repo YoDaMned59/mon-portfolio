@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FaReact, FaJs, FaSass, FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import { SiRedux, SiMongodb, SiExpress, SiJest } from "react-icons/si";
 import PropTypes from "prop-types";
-import "../styles/projectModal.scss";
+import "../styles/projectmodal.scss";
 
 Modal.setAppElement("#root");
 
