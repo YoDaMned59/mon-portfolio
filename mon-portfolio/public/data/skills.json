@@ -1,0 +1,13 @@
+[
+    { "name": "React", "icon": "FaReact", "color": "#61dafb" },
+    { "name": "JavaScript", "icon": "FaJs", "color": "#f7df1e" },
+    { "name": "SCSS", "icon": "FaSass", "color": "#c69" },
+    { "name": "HTML5", "icon": "FaHtml5", "color": "#e34f26" },
+    { "name": "CSS3", "icon": "FaCss3Alt", "color": "#1572b6" },
+    { "name": "Node.js", "icon": "FaNodeJs", "color": "#8cc84b" },
+    { "name": "Redux", "icon": "SiRedux", "color": "#764abc" },
+    { "name": "MongoDB", "icon": "SiMongodb", "color": "#4DB33D" },
+    { "name": "Express", "icon": "SiExpress", "color": "#000000" },
+    { "name": "Jest", "icon": "SiJest", "color": "#c21325" }
+  ]
+  

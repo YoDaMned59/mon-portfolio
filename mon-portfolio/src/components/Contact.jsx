@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { FaLinkedin } from "react-icons/fa";
 import "../styles/contact.scss";
 
 export const Contact = () => {
@@ -50,17 +49,6 @@ export const Contact = () => {
                     <input type="submit" value="Envoyer" />
                 </form>
                 {status && <p className="status-message">{status}</p>}
-            </div>
-
-            <div className="contact-info">
-                <div className="social-links">
-                    <a href="https://www.linkedin.com/in/duviviersebastien" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin size={30} />
-                    </a>
-                </div>
-                <p>Phone: <a href="tel:+33646147282">06/46/14/72/82</a></p>
-                <p>Email: <a href="mailto:seb.duvivier@outlook.fr">seb.duvivier@outlook.fr</a></p>
-                <p>Location: Meteren, 59270</p>
             </div>
         </div>
     </div>

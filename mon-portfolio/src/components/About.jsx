@@ -1,4 +1,4 @@
-import PictureProfile from '../assets/images/seb-1.webp';
+import PictureProfile from '../assets/images/Profile_picture.webp';
 import '../styles/about.scss';
 
 
