@@ -1,22 +1,38 @@
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "../styles/projects.scss";
 
 export const Cards = ({ data, openModal }) => {
     return (
-        <div className="grid">
+        <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={20}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            loop={true}
+            breakpoints={{
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }}
+        >
             {data.length > 0 &&
                 data.map((project) => (
-                    <div key={project.id} className="card">
+                    <SwiperSlide key={project.id}>
                         <h3>{project.title}</h3>
                         <img
                             src={project.image}
                             alt={project.title}
-                            className="card-image"
+                            className="carousel-image"
                         />
                         <button onClick={() => openModal(project.id)} className="open-modal-btn">
-                            voir plus
+                            Description du projet
                         </button>
-                        <div className="card-links">
+                        <div className="carousel-links">
                             <a href={project.github} target="_blank" rel="noopener noreferrer">
                                 <FaGithub size={24} /> GitHub
                             </a>
@@ -24,8 +40,8 @@ export const Cards = ({ data, openModal }) => {
                                 <FaGlobe size={20} /> Voir le site
                             </a>
                         </div>
-                    </div>
+                    </SwiperSlide>
                 ))}
-        </div>
+        </Swiper>
     );
 };

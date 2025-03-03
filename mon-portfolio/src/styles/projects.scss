@@ -9,70 +9,21 @@
     margin-bottom: 20px;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-    justify-items: center;
-
-    @media (max-width: 1024px) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-    }
-
-    @media (max-width: 600px) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-    }
-
-    @media (max-width: 400px) {
-      grid-template-columns: 1fr;
-      gap: 6px;
-    }
+  .swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
   }
 
-  .open-modal-btn {
-    padding: 10px 14px;
-    background-color: #0A1828;
-    color: #BFA181;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
+  .swiper-slide {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 6px;
-    width: 100%;
-    margin-top: 10px;
-
-    &:hover {
-      background-color: #a07c5f;
-      transform: scale(1.05);
-    }
-
-    &:focus {
-      outline: 2px solid #BFA181;
-      outline-offset: 2px;
-    }
-  }
-
-  .card {
-    width: 100%;
-    max-width: 250px;
+    text-align: center;
+    padding: 20px;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 
     &:hover {
@@ -87,26 +38,43 @@
       margin-bottom: 10px;
     }
 
-    p {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    .card-image {
+    .carousel-image {
       width: 100%;
+      max-width: 400px;
       height: auto;
       aspect-ratio: 16 / 9;
       object-fit: cover;
       border-radius: 8px;
     }
 
-    .card-links {
+    .open-modal-btn {
+      padding: 10px 14px;
+      background-color: #0A1828;
+      color: #BFA181;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+      margin-top: 10px;
+
+      &:hover {
+        background-color: #a07c5f;
+        transform: scale(1.05);
+      }
+
+      &:focus {
+        outline: 2px solid #BFA181;
+        outline-offset: 2px;
+      }
+    }
+
+    .carousel-links {
       margin-top: 10px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
-      padding: 10px;
 
       a {
         color: #0A1828;
@@ -117,6 +85,7 @@
         align-items: center;
         gap: 6px;
         transition: color 0.3s;
+        margin-top: 5px;
 
         &:hover {
           color: #BFA181;
