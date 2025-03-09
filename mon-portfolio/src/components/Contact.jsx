@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import "../styles/contact.scss";
 
 export const Contact = () => {
@@ -35,7 +35,7 @@ export const Contact = () => {
                 <div className="contact-content">
                     <div className="form-container">
                         <span>Une question ?</span>
-                        <p> N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures.</p>
+                        <p> N'hésitez pas à m'écrire ! Je vous répondrai en moins de 24 heures.</p>
                         <form ref={form} onSubmit={sendEmail}>
                                 <label htmlFor="name">Nom</label>
                                 <input type="text" name="to_name" id="name" required placeholder="Entrez votre nom" />
@@ -53,6 +53,6 @@ export const Contact = () => {
                     </div>
                 </div>
             </div>
-        </section>///
+        </section>
     );
 };
