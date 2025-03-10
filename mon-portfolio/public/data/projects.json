@@ -35,7 +35,6 @@
     "image": "/images/argentbank_miniat.webp",
     "descriptionImage": "/images/argentbank.webp",
     "github": "https://github.com/YoDaMned59/ArgentBank-Frontend.git",
-    "site": "https://artfish.pro/portfolio/argentbank/",
     "description": "ArgentBank est une application bancaire sécurisée permettant aux utilisateurs de gérer leurs comptes. Ce projet met en œuvre Redux pour la gestion de l'état global, une authentification sécurisée via JWT, et une architecture modulaire avec React. L'optimisation UX/UI a été priorisée pour garantir une expérience utilisateur fluide et intuitive.",
     "skills": "React, Redux, JavaScript ES6, API REST, Authentification JWT, UI/UX, SCSS, Accessibilité, React Router"
   },
