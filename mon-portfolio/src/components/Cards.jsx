@@ -1,4 +1,5 @@
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -46,4 +47,16 @@ export const Cards = ({ data, openModal }) => {
             ))}
         </Swiper>
     );
+}
+
+Cards.propTypes = {
+    data: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        title: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+        github: PropTypes.string.isRequired,
+        site: PropTypes.string.isRequired
+    })).isRequired,
+    openModal: PropTypes.func.isRequired
 };
+

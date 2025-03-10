@@ -7,7 +7,7 @@
     "github": "https://github.com/YoDaMned59/kasa.git",
     "site": "https://openclassrooms-kasa-app.netlify.app/",
     "description": "Kasa est une application moderne permettant aux utilisateurs de trouver des logements en location saisonnière. Ce projet met en avant la gestion des routes avec React Router, la communication avec une API REST, et l'optimisation des composants React via PropTypes. Une attention particulière a été portée à l'accessibilité et à la responsivité avec CSS Grid et SCSS.",
-    "skills": "React, JavaScript ES6, API REST, React Router, PropTypes, CSS Grid, SCSS, Responsivité, Accessibilité"
+    "skills": "React, JavaScript, API REST, React Router, PropTypes, CSS Grid, SCSS, Responsivité, Accessibilité"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "github": "https://github.com/YoDaMned59/Ohmyfood.git",
     "site": "https://yodamned59.github.io/Ohmyfood/",
     "description": "Ohmyfood est une application web dynamique permettant aux utilisateurs de précommander des plats dans des restaurants partenaires. Ce projet se concentre sur les animations CSS avancées pour enrichir l'expérience utilisateur, avec des effets fluides et interactifs. Une structure SCSS optimisée a été mise en place pour garantir un code maintenable et évolutif.",
-    "skills": "HTML5, CSS3, SCSS, JavaScript, Flexbox, Animations CSS, Responsivité, Accessibilité"
+    "skills": "HTML5, CSS3, SCSS, Flexbox, Animations CSS, Responsivité, Accessibilité"
   },
   {
     "id": 3,

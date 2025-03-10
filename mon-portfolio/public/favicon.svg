@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#001219"/>
+  <path d="M250 100 C150 100 100 150 100 250 C100 350 150 400 250 400 C350 400 400 350 400 250 C400 150 350 100 250 100 Z M250 150 L350 250 L250 350 L150 250 Z" fill="#00FFD1"/>
+  <text x="235" y="270" font-family="Arial" font-size="120" fill="white">S</text>
+</svg> 

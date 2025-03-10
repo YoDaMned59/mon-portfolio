@@ -1,5 +1,4 @@
-import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaDocker, FaGit, FaSass } from 'react-icons/fa'; 
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaGit, FaSass } from 'react-icons/fa'; 
 import "../styles/competences.scss";
 
 export const Competences = () => {
